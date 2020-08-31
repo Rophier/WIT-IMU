@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>wit_imu</name>
+  <version>0.1.0</version>
+  <description>
+  The wit_imu package is a ROS driver for WIT IMU devices.
+  Support device:
+  JY901
+  WT901C
+  </description>
+
+  <author>Inspur Group</author>
+  <author email="zhangyp@inspur.com">Penn Zhang</author>
+  <maintainer email="zhangyp@inspur.com">Penn Zhang</maintainer>
+  <license>BSD</license>
+  <url type="website">http://wiki.ros.org/wit_imu</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>serial</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>serial</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+
+</package>
