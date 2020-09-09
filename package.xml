@@ -14,7 +14,7 @@
   <author email="zhangyp@inspur.com">Penn Zhang</author>
   <maintainer email="zhangyp@inspur.com">Penn Zhang</maintainer>
   <license>BSD</license>
-  <url type="website">http://wiki.ros.org/wit_imu</url>
+  <url type="website">http://wiki.ros.org/wit-imu-driver</url>
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
