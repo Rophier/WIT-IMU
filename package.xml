@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
-  <name>wit_imu</name>
+  <name>wit-imu-driver</name>
   <version>0.1.0</version>
   <description>
   The wit_imu package is a ROS driver for WIT IMU devices.
