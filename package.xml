@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
-<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<package format="2">
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" 
+            schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
   <name>wit-imu-driver</name>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
   <description>
-  The wit_imu package is a ROS driver for WIT IMU devices.
+  The wit_imu package is a ROS 2 driver for WIT IMU devices.
   Support device:
   JY901
   WT901C
@@ -12,19 +13,26 @@
 
   <author>Inspur Group</author>
   <author email="zhangyp@inspur.com">Penn Zhang</author>
-  <maintainer email="zhangyp@inspur.com">Penn Zhang</maintainer>
+  <maintainer email="kyuhyong@gmail.com">Kyuhyong You</maintainer>
   <license>BSD</license>
   <url type="website">http://wiki.ros.org/wit-imu-driver</url>
 
-  <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>roscpp</build_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <!--<build_depend>roscpp</build_depend>-->
   <build_depend>serial</build_depend>
   <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+<!--
   <build_export_depend>roscpp</build_export_depend>
   <build_export_depend>sensor_msgs</build_export_depend>
 
-  <exec_depend>roscpp</exec_depend>
+  <exec_depend>roscpp</exec_depend>-->
+  <exec_depend>rclcpp</exec_depend>
   <exec_depend>serial</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
 
+  <export>
+   <build_type>ament_cmake</build_type>
+  </export>
 </package>
