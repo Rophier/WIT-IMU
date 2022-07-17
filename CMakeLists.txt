@@ -19,6 +19,11 @@ find_package(serial       REQUIRED)
 find_package(sensor_msgs  REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
+find_package(nav_msgs REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2_msgs REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+
 ###########
 ## Build ##
 ###########
@@ -33,6 +38,11 @@ ament_target_dependencies(${PROJECT_NAME}_node
   sensor_msgs
   serial
   std_msgs
+  geometry_msgs
+  nav_msgs
+  tf2_ros
+  tf2_msgs
+  tf2_geometry_msgs
 )
 
 #############
@@ -49,7 +59,10 @@ install(
 )
 install(
   DIRECTORY launch
-  DESTINATION share/${PROJECT_NAME}
+  DESTINATION share/${PROJECT_NAME}/launch
+)
+install(DIRECTORY config/
+  DESTINATION share/${PROJECT_NAME}/config
 )
 
 ament_package()
