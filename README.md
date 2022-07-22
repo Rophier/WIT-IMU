@@ -55,8 +55,19 @@ wt901c.yaml file includes parameters you can modify per the device setup.
 
 
 # Run node
+
 To just run the node, simply enter
 
 ```
 $ ros2 run wit-imu-driver wit-imu-driver_node
 ```
+
+# Troubleshoot
+
+If you see messages like "Unable to open port " 
+- If you find the device in /dev/ttyUSB0, You may try
+```
+$ sudo adduser {USER_NAME} dialout
+```
+- If you see multiple instances like /dev/ttyUSB1 or /dev/ttyUSB2,  
+ Try different port name in /config/wt901c.yaml file
