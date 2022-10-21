@@ -1,0 +1,15 @@
+/**:
+  ros__parameters:
+    port:
+      name: "/dev/ttyUSB0"
+      baudrate: 115200
+    imu:
+      output_hz: 100
+      topic: "imu_data"
+    mag:
+      enable: true
+      topic: "mag_data"
+    tf:
+      enable: true
+      base_frame: "base_link"
+      imu_frame: "imu_link"
